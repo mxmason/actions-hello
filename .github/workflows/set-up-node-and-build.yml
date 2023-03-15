@@ -4,7 +4,8 @@ on:
   workflow_call:
 
 jobs:
-  set-up-node-install-build:
+  install-and-build:
+    name: Install dependencies and build project
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
