@@ -2,13 +2,11 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Set-Up-Node:
-    name: Set up Node and build project
-    uses: ./.github/workflows/set-up-node-and-build.yml
   Explore-GitHub-Actions:
-    needs: Set-Up-Node
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/set-up-and-build
       - run: echo "This action is using the following version of Node:"
       - run: node -v
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."

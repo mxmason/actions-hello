@@ -1,17 +1,13 @@
 name: Set up Node, install packages, and build project
+description: Install Node LTS and project dependencies, then build the project
 
-on:
-  workflow_call:
-
-jobs:
-  install-and-build:
-    name: Install dependencies and build project
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
+runs:
+  using: "composite"
+  steps:
     - uses: actions/setup-node@v3
       with:
         node-version-file: '.nvmrc'
     - run: |
         npm ci
         npm run build
+      shell: bash
