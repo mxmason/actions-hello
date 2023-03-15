@@ -5,7 +5,6 @@ on:
 
 jobs:
   install-and-build:
-    name: Install dependencies and build project
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
