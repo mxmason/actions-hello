@@ -1,0 +1,15 @@
+{
+  "name": "actions-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"Hellaur, world!!!!!!!!!\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wretch": "^2.5.1"
+  }
+}
