@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   Set-Up-Node:
+    name: Set up Node and build project
     uses: ./.github/workflows/set-up-node-and-build.yml
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
