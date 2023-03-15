@@ -1,4 +1,4 @@
-name: Set up Node, install packages, and build project
+name: Set up, Install, Build
 description: Install Node LTS and project dependencies, then build the project
 
 runs:
